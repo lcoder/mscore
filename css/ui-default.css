@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* 打分,星形分数 */
+/* 字体 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot'); /* IE9*/
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */ }
+.iconfont { font-family: "iconfont"; font-size: 100%; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.star_score.grade .star { cursor: pointer; }
+.star_score .star { color: #ccc; vertical-align: -2px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.star_score .star i.iconfont { font-size: 22px; }
+.star_score .star.on { color: #ffbb56; }
+.star_score .star.picked { color: #ffbb56; }
+.star_score .score { margin-left: 10px; font-size: 14px; }

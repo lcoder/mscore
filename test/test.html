@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mscore测试用例</title>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="../index.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/ui-default.css"/>
+</head>
+<body>
+<div data-stars="3" class="star_score grade">
+    <label class="field">学习能力：</label>
+    <span class="star"><i class="iconfont">&#xe619;</i></span>
+    <span class="star"><i class="iconfont">&#xe619;</i></span>
+    <span class="star"><i class="iconfont">&#xe619;</i></span>
+    <span class="star"><i class="iconfont">&#xe619;</i></span>
+    <span class="star"><i class="iconfont">&#xe619;</i></span>
+</div>
+
+<script type="text/javascript">
+$( function(){
+    $(".star_score").initScore( {
+        onMouseEnterStar: function( starIndex ){
+            console.log( this ) ;
+            console.log( starIndex );
+        }
+    } ) ;
+} ) ;
+</script>
+</body>
+</html>
